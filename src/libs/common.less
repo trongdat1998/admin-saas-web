@@ -1,0 +1,264 @@
+@import "./mixin";
+@import "~view-design/src/styles/index.less";
+@import "../components/menu/index.less";
+@import "../components/main/index.less";
+@import "../components/fixed/index.less";
+
+body {
+  background: #eee;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.ivu-table-wrapper {
+  //border: none;
+  // th {
+  //   font-size: 13px;
+  //   //border-bottom: 1px solid #eee;
+  //   height: 50px;
+  //   //background: #fff;
+  // }
+  .ivu-table{
+    background: none;
+  }
+
+  td {
+    background: none;
+    // font-size: 13px;
+    // border-bottom: 1px solid #eee;
+  }
+  tr:hover td,.ivu-table-row-hover td {
+    background:#f8f8f8 !important;
+  }
+
+  .ivu-table-fixed-body{
+    background: #fff;
+  }
+  // .ivu-table {
+  //   &::after,
+  //   &::before {
+  //     display: none;
+  //   }
+  // }
+}
+
+.ivu-modal-content {
+  border-radius: 0;
+}
+
+.page-exchange {
+  .search {
+    padding: 26px 10px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    margin:0 0 20px !important;
+  }
+
+  &-win {
+    .ivu-form-item-label {
+      font-size: 14px;
+    }
+  }
+
+  &-detail {
+    .ivu-col {
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+
+  .ivu-form .ivu-form-item-label {
+    font-size: 14px;
+    height: 41px;
+  }
+}
+
+.ivu-tabs-nav .ivu-tabs-tab {
+  padding: 15px 20px;
+}
+
+.page-pages {
+  text-align: right;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.hand{
+  cursor: pointer;
+}
+
+.move{
+  cursor: move
+}
+// .ivu-input-large,
+// .ivu-select-large.ivu-select-single .ivu-select-selection,
+// .ivu-btn-large {
+//   height: 44px;
+// }
+
+// .ivu-select-large.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+// .ivu-select-large.ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+//   height: 44px;
+//   line-height: 44px;
+// }
+
+// .ivu-input-wrapper-large .ivu-input-prefix i,
+// .ivu-input-wrapper-large .ivu-input-suffix i {
+//   line-height: 44px;
+// }
+// .ivu-tag {
+//   border-radius: 11px;
+// }
+
+// .ivu-tag-orange {
+//   background: #ff9800;
+//   border-color: #ff9800;
+//   box-shadow: 0 2px 2px 0 rgba(255, 152, 0, 0.14), 0 3px 1px -2px rgba(255, 152, 0, 0.2), 0 1px 5px 0 rgba(255, 152, 0, 0.12);
+//   .ivu-tag-text {
+//     color: #fff !important;
+//   }
+// }
+
+// .ivu-tag-green {
+//   background: #4caf50;
+//   border-color: #4caf50;
+//   box-shadow: 0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12);
+//   .ivu-tag-text {
+//     color: #fff !important;
+//   }
+// }
+
+// .ivu-tag-default {
+//   background: #999999;
+//   border-color: #999999;
+//   box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+//   .ivu-tag-text {
+//     color: #fff !important;
+//   }
+// }
+
+// .ivu-input-group-large .ivu-input,
+// .ivu-input-group-large > .ivu-input-group-prepend,
+// .ivu-input-group-large > .ivu-input-group-append {
+//   height: 44px;
+// }
+
+// .ivu-input-group-large .ivu-input,
+// .ivu-input-group-large > .ivu-input-group-prepend,
+// .ivu-input-group-large > .ivu-input-group-append {
+//   padding:5px 7px;
+// }
+
+.page-exchange-alert {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  padding: 15px;
+  border: none;
+  font-size: 14px;
+  margin: 15px -7.5px 0;
+
+  strong {
+    margin: 0 8px;
+  }
+}
+
+.ivu-breadcrumb {
+  padding-bottom: 20px;
+}
+
+.page-login {
+  background: #121620 url(../assets/background.jpeg);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .text {
+    padding: 10px 0 0;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .logo {
+    position: absolute;
+    top: -40px;
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #2f7df6;
+    box-shadow: 0 12px 20px -10px rgba(0, 188, 212, 0.28), 0 4px 20px 0 rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(0, 188, 212, 0.2);
+    text-align: center;
+
+    img {
+      max-height: 32px;
+      max-width: 280px;
+      vertical-align: top;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .loginBox {
+    width: 360px;
+    z-index: 2;
+    background: #fff;
+    margin-top: 30px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    margin-bottom: 30px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 15px;
+    padding-top: 100px;
+  }
+
+  .locale {
+    z-index: 2;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    a {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .ivu-icon {
+      border: 1px solid #fff;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.spin-icon-load {
+  animation: ani-demo-spin 1s linear infinite;
+}
+@keyframes ani-demo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
